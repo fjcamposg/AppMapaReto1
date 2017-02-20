@@ -8,20 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		092540AC1E54D40E0064B697 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092540AB1E54D40E0064B697 /* AppDelegate.swift */; };
-		092540AE1E54D40E0064B697 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092540AD1E54D40E0064B697 /* ViewController.swift */; };
+		092540AE1E54D40E0064B697 /* MAPAPrimerMapaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092540AD1E54D40E0064B697 /* MAPAPrimerMapaViewController.swift */; };
 		092540B11E54D40E0064B697 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 092540AF1E54D40E0064B697 /* Main.storyboard */; };
 		092540B31E54D40E0064B697 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 092540B21E54D40E0064B697 /* Assets.xcassets */; };
 		092540B61E54D40E0064B697 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 092540B41E54D40E0064B697 /* LaunchScreen.storyboard */; };
+		092540BF1E54E4A30064B697 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 092540BE1E54E4A30064B697 /* CoreLocation.framework */; };
+		092540C11E54E4AF0064B697 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 092540C01E54E4AF0064B697 /* MapKit.framework */; };
+		092540C31E54F0510064B697 /* MAPADatosAlfanumericosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092540C21E54F0510064B697 /* MAPADatosAlfanumericosViewController.swift */; };
+		09D363D11E5B7FA100544A81 /* MAPASListaLugaresFavoritosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D363D01E5B7FA100544A81 /* MAPASListaLugaresFavoritosTableViewController.swift */; };
+		09D363D31E5B7FC500544A81 /* MAPALugarFavoritoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D363D21E5B7FC500544A81 /* MAPALugarFavoritoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		092540A81E54D40E0064B697 /* AppMapaReto1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppMapaReto1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		092540AB1E54D40E0064B697 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		092540AD1E54D40E0064B697 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		092540AD1E54D40E0064B697 /* MAPAPrimerMapaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MAPAPrimerMapaViewController.swift; sourceTree = "<group>"; };
 		092540B01E54D40E0064B697 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		092540B21E54D40E0064B697 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		092540B51E54D40E0064B697 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		092540B71E54D40E0064B697 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		092540BE1E54E4A30064B697 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		092540C01E54E4AF0064B697 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		092540C21E54F0510064B697 /* MAPADatosAlfanumericosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MAPADatosAlfanumericosViewController.swift; sourceTree = "<group>"; };
+		09D363D01E5B7FA100544A81 /* MAPASListaLugaresFavoritosTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MAPASListaLugaresFavoritosTableViewController.swift; sourceTree = "<group>"; };
+		09D363D21E5B7FC500544A81 /* MAPALugarFavoritoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MAPALugarFavoritoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +39,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				092540C11E54E4AF0064B697 /* MapKit.framework in Frameworks */,
+				092540BF1E54E4A30064B697 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +52,7 @@
 			children = (
 				092540AA1E54D40E0064B697 /* AppMapaReto1 */,
 				092540A91E54D40E0064B697 /* Products */,
+				092540BD1E54E4A30064B697 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +68,33 @@
 			isa = PBXGroup;
 			children = (
 				092540AB1E54D40E0064B697 /* AppDelegate.swift */,
-				092540AD1E54D40E0064B697 /* ViewController.swift */,
+				09D363D41E5B7FD400544A81 /* VIEW_CONTROLLERS */,
 				092540AF1E54D40E0064B697 /* Main.storyboard */,
 				092540B21E54D40E0064B697 /* Assets.xcassets */,
 				092540B41E54D40E0064B697 /* LaunchScreen.storyboard */,
 				092540B71E54D40E0064B697 /* Info.plist */,
 			);
 			path = AppMapaReto1;
+			sourceTree = "<group>";
+		};
+		092540BD1E54E4A30064B697 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				092540C01E54E4AF0064B697 /* MapKit.framework */,
+				092540BE1E54E4A30064B697 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		09D363D41E5B7FD400544A81 /* VIEW_CONTROLLERS */ = {
+			isa = PBXGroup;
+			children = (
+				092540AD1E54D40E0064B697 /* MAPAPrimerMapaViewController.swift */,
+				092540C21E54F0510064B697 /* MAPADatosAlfanumericosViewController.swift */,
+				09D363D01E5B7FA100544A81 /* MAPASListaLugaresFavoritosTableViewController.swift */,
+				09D363D21E5B7FC500544A81 /* MAPALugarFavoritoViewController.swift */,
+			);
+			name = VIEW_CONTROLLERS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,8 +169,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				092540AE1E54D40E0064B697 /* ViewController.swift in Sources */,
+				09D363D11E5B7FA100544A81 /* MAPASListaLugaresFavoritosTableViewController.swift in Sources */,
+				092540AE1E54D40E0064B697 /* MAPAPrimerMapaViewController.swift in Sources */,
+				092540C31E54F0510064B697 /* MAPADatosAlfanumericosViewController.swift in Sources */,
 				092540AC1E54D40E0064B697 /* AppDelegate.swift in Sources */,
+				09D363D31E5B7FC500544A81 /* MAPALugarFavoritoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,10 +295,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AppMapaReto1/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mapa.AppMapaReto1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -271,10 +309,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AppMapaReto1/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mapa.AppMapaReto1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -297,6 +337,7 @@
 				092540BC1E54D40E0064B697 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
