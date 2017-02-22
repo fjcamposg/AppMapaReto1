@@ -258,18 +258,34 @@
         <!--Lista de lugares-->
         <scene sceneID="SAF-by-Ldj">
             <objects>
-                <tableViewController id="kEj-NQ-Rix" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="PASListaLugaresFavoritosTableViewController" id="kEj-NQ-Rix" customClass="MAPASListaLugaresFavoritosTableViewController" customModule="AppMapaReto1" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="PbQ-Wg-W94">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="zpe-HL-1W3">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell" textLabel="14V-Kr-kcI" detailTextLabel="Lt4-6d-ndg" style="IBUITableViewCellStyleSubtitle" id="zpe-HL-1W3">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zpe-HL-1W3" id="PjW-JF-zVR">
                                     <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="14V-Kr-kcI">
+                                            <rect key="frame" x="15" y="4" width="34" height="21"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Lt4-6d-ndg">
+                                            <rect key="frame" x="15" y="25" width="44" height="15"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -290,10 +306,10 @@
             </objects>
             <point key="canvasLocation" x="-383" y="1262"/>
         </scene>
-        <!--View Controller-->
+        <!--Mapa-->
         <scene sceneID="SOU-Yf-vcw">
             <objects>
-                <viewController id="WVh-8c-0H6" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PALugarFavoritoViewController" id="WVh-8c-0H6" customClass="MAPALugarFavoritoViewController" customModule="AppMapaReto1" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="txC-9b-jkW"/>
                         <viewControllerLayoutGuide type="bottom" id="bHa-e6-MXh"/>
@@ -301,13 +317,27 @@
                     <view key="view" contentMode="scaleToFill" id="SIC-3u-qkO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="fSu-lW-cth">
+                                <rect key="frame" x="0.0" y="67" width="375" height="554"/>
+                            </mapView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fSu-lW-cth" firstAttribute="top" secondItem="txC-9b-jkW" secondAttribute="bottom" id="6XV-Gj-7Dc"/>
+                            <constraint firstItem="fSu-lW-cth" firstAttribute="leading" secondItem="SIC-3u-qkO" secondAttribute="leading" id="ViV-Ap-leK"/>
+                            <constraint firstAttribute="trailing" secondItem="fSu-lW-cth" secondAttribute="trailing" id="a3u-sj-7kn"/>
+                            <constraint firstItem="bHa-e6-MXh" firstAttribute="top" secondItem="fSu-lW-cth" secondAttribute="bottom" id="gK1-u0-pma"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="aXC-gR-4a1"/>
+                    <navigationItem key="navigationItem" title="Mapa" id="aXC-gR-4a1"/>
+                    <connections>
+                        <outlet property="miMapa" destination="fSu-lW-cth" id="BhI-WZ-9PR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7ET-UX-fOA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="476" y="1262"/>
+            <point key="canvasLocation" x="476" y="1261.6191904047978"/>
         </scene>
         <!--Item-->
         <scene sceneID="9hD-C8-7Hw">
